@@ -1,0 +1,348 @@
+/* start main rules */
+
+body {
+    background-color: #F5F5F5;
+    text-decoration: none;
+}
+.contmarg {
+    margin: 20px auto;
+}
+a {
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: none;
+}
+.h1, h1 {
+    font-size: 4rem;
+    text-transform: capitalize;
+    padding: 25px 0;
+    color: #575b62;
+    font-weight: bold;
+}
+.astix {
+    color: red;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+ul {
+    padding: 0;
+    margin: 0;
+}
+label {
+    text-transform: capitalize;
+}
+/* end main rules */
+
+
+/* start front end */
+
+/* start header navbar  */
+.upper-bar {
+    padding: 10px;
+    background-color: white;
+}
+.upper-bar .rightlink {
+    display: flex;
+    justify-content: right;
+}
+.container .nav-item .navbar-brand {
+    color: rgba(255,255,255,.5);
+}
+.flxcont {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    gap: 10px;
+}
+.flxcont .userimg {
+    max-width: 35px;
+    max-height: 35px;
+    border-radius: 50%;
+}
+.flxcont img {
+    max-width: 35px;
+    max-height: 35px;
+    border-radius: 50%;
+}
+.logo {
+      font-size: 24px;
+  font-weight: bold;
+  color: #ed862af0 !important;
+  font-family: 'Dancing Script', cursive;
+}
+
+/* end header navbar  */
+
+
+/* start login  */
+
+.login-page form,
+.login-page .msgerror {
+    max-width: 400px;
+    margin: auto;
+}
+.login-page .con-input {
+    position: relative;
+}
+.login-page form input {
+    margin-bottom: 5px;
+}
+.login-page .active {
+    color: #007bff;
+}
+/* .login-page .active.log {
+    color: #007bff;
+} */
+.login-page .active.snup {
+    color: #28a745;
+}
+.login-page h1 {
+    color: #b9bbbe;
+}
+.login-page h1 span {
+    cursor: pointer;
+}
+.login-page .signup {
+    display: none;
+}
+
+/* end login  */
+
+/* start categories page */
+
+.container .row {
+    gap: 15px 0;
+}
+.container .row .box-item {
+    background-color: white;
+    padding: 1px 10px;
+    position: relative;
+    box-shadow: 0 0 10px #ddd;
+}
+.container .row .box-item .price {
+    background-color: #7a7676;
+    position: absolute;
+    left: 0;
+    padding: 0 5px;
+    top: 3px;
+    color: white;
+}
+.container .row .box-item img {
+    width: 100%;
+    height: 210px;
+    padding-top: 5px;
+}
+
+/* end categories page */
+
+
+/* start profile page */
+
+.container .cardprofile {
+    margin-bottom: 10px;
+}
+.container .card-header {
+    color: white;
+}
+.info ul li {
+    padding: 10px;
+}
+.info ul li:nth-child(odd) {
+    background-color: #e5e5e5;
+}
+.info ul li span {
+    width: 150px;
+    display: inline-block;
+}
+.info .infbtn {
+    margin-top: 10px;
+}
+.ads .box-item .date, 
+.categories .box-item .date {
+    display: flex;
+    justify-content: right;
+    font-size: 12px;
+    font-weight: bold;
+    color: #beb8b8;
+}
+.ads .notapprove {
+    position: absolute;
+    background-color: red;
+    top: 35px;
+    left: 0px;
+    color: white;
+    padding: 5px;
+}
+/* end profile page */
+
+
+/* start newads page */
+
+.adsform .astix {
+    right: 25px;
+}
+
+/* end newads page */
+
+
+/* start items-users page */
+
+.commenting {
+      margin: 50px auto;
+}
+.commenting input[type="submit"] {
+    margin: 10px 0 20px;
+}
+.comntcontent {
+    margin-bottom: 15px;  
+}
+.commenting textarea {
+    max-width: 500px;
+    height: 150px;
+    border-radius: 8px;
+    resize: none;
+}
+@media(max-width:767px) {
+
+    .commenting textarea {
+        max-width: 350px;
+    }
+    .comntcontent {
+        display: flex;
+        align-items: center;
+    }
+    .comntcontent .colimg {
+        flex-basis: 30%;
+    }
+    .comntcontent .colcontinfi {
+        flex-basis: 70%;
+        margin-left: inherit;
+        padding: 0;
+    }
+}
+.comntcontent img {
+    max-width: 70%;
+    border-radius: 50%;
+}
+.comntcontent .colcontinfo {
+    background-color: white;
+    border-radius: 10px;
+    width: fit-content;
+    max-width: calc(70% - 20px);
+    padding: 0 10px;
+    height: fit-content;
+}
+.container .taglink {
+    color: #004085;
+background-color: #cce5ff;
+border-color: #b8daff;
+padding: 1px 5px 3px;
+border-radius: 5px;
+}
+
+/* end items-users page */
+
+/* start toggle slider and dark mode*/
+
+/* #main {
+  transition: background 0.3s ease;
+  display: flex;
+  justify-content: flex-end;
+} */
+/*TOGGLE COLORS*/
+* .dark {
+    background-color: #171923 !important;
+    color: white !important;
+    border-color: #27282a !important;
+}
+
+.logo.dark {
+    color: #ed862af0 !important;
+}
+
+/*SWITCH*/
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    /* width: 50px; */
+    /* height: 24px; */
+    height: 34px;
+    align-self: center;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    /* height: 18px; */
+    /* width: 18px; */
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+}
+
+input:checked+.slider.dark {
+    /* background-color: #2196f3 !important; */
+    background-color: #ed862af0 !important;
+}
+
+input:checked+.slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider {
+    border-radius: 30px;
+}
+
+.slider:before {
+    border-radius: 50%;
+}
+.box-item.dark {
+    box-shadow: 0 0 4px #453c3c !important;
+}
+.container .row .box-item .price.dark {
+    background-color: #ed862af0 !important;
+    color: black !important;
+}
+a.dark {
+    color: #ed862af0 !important;
+}
+nav.dark a {
+    color: white !important;
+}
+.container .taglink.dark {
+    border-color: #ed862af0 !important;
+    border: 1px solid !important;
+    background-color: #ed862a1f !important;
+}
+input.dark, textarea.dark {
+    background-color: #8f919c14 !important;
+}
+/* start toggle slider and dark mode*/

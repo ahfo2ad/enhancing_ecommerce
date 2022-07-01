@@ -1,0 +1,83 @@
+if(!isset($noNavbar)) {
+
+        include $temp_file . "navbar.php";
+
+    }
+=> $noNavbar
+check if ($noNavbar = "";) variable is founded in the page --->(navbar.php) page doesn't be executed.
+===========================================================================================================
+
+=======================
+===		    ===
+=== backend js file ===
+===		    ===	
+=======================
+// show password function
+
+**  when hovering on the eye icon at the password input field => input type will be converted to text 
+    and show the password 
+----------------------------------------
+// connfirmation message function
+
+** used in delete button to make sure of deleting user
+----------------------------------------------------------
+
+=======================
+===		    ===
+=== function file   ===
+===		    ===	
+=======================
+
+//  function getTitle
+
+** define the title of the page 
+
+*** ex :- $pageTitle = "users";
+----------------------------------------------------
+// function redirect($themsg, $url = null, $seconds = 3)
+
+**  used to direct to specific page after click submit or specific button
+**  it accepts 3 parameters  
+**  1st param  => the message or alert that appers on the page directed to
+**  2nd param  => url directed to == default url is index.php
+**  3rd param  => time takes for(showing $themsg) before redirected page
+
+-------------------------------------------------------------
+
+function checkItem($select, $from, $value)
+
+**  used to check the selected field at the data base and return its count
+**  it accepts 3 parameters  
+**  1st param  => selected field or all fields (*)
+**  2nd param  => table name to search in
+**  3rd param  => value of the selected field
+
+------------------------------------------------------------------------
+
+function countItems($item, $table)
+
+**  used to count items in the selected field (column) and return number
+**  it accepts 2 parameters  
+**  1st param  => selected field or all fields (*)
+**  2nd param  => table name to search in
+
+----------------------------------------------------------------
+
+function getLatest($select, $table, $order, $limit = 5)
+
+**  used to get the latest items registered in data base
+**  it accepts 4 parameters  
+**  1st param  => selected field or all fields (*)
+**  2nd param  => table name to search in
+**  3rd param  => order depending on selected field to order by
+**  4th param  => limit = 5 means => get the latest 5 users or items in data base and its the default
+
+-------------------------------------------------------------------
+
+
+
+
+
+
+
+
